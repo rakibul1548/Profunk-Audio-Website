@@ -1,4 +1,3 @@
-/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +27,7 @@ img {
     display: block;
 }
 
-/* NAVBAR - Fixed */
+/* navfixed */
 .navbar {
     position: fixed;
     top: 0;
@@ -74,7 +73,6 @@ img {
 }
 
 
-/* Big dot before text */
 .nav-links a::before {
     content: '';
     position: absolute;
@@ -86,7 +84,6 @@ img {
     border-radius: 50%;        
 }
 
-/* Active link */
 .nav-links a.active::before {
     background-color: #111; 
 }
@@ -112,7 +109,6 @@ img {
     background: #00b8e6 !important;
     transform: translateY(-1px);
 }
-/* =================== HAMBURGER MENU =================== */
 /* Hamburger */
 .hamburger {
     display: none;
@@ -133,9 +129,8 @@ img {
     transition: all 0.3s ease;
 }
 
-/* Mobile Menu */
 .mobile-menu {
-    display: none; /* hidden by default */
+    display: none; 
     flex-direction: column;
     background: #111;
     position: absolute;
@@ -157,7 +152,6 @@ img {
     color: #00d4ff;
 }
 
-/* Hamburger Active Animation */
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -168,7 +162,6 @@ img {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Show menu when active */
 .mobile-menu.active {
     display: flex;
 }
@@ -186,7 +179,6 @@ img {
     }
 }
 
-/* HERO SECTION */
 .hero {
     position: relative;
     height: 100vh;
@@ -194,7 +186,7 @@ img {
     display: flex;
     align-items: center;
     color: #fff;
-    margin-top: 68px; /* Offset for fixed navbar */
+    margin-top: 68px; 
 }
 
 .hero-bg {
@@ -230,7 +222,6 @@ img {
     opacity: 0.95;
 }
 
-/* EXPLORE BUTTON - Pixel-Perfect Match */
 .btn-explore {
   background: #1a1a1a;
   color: #fff;
@@ -284,8 +275,6 @@ img {
 }
 
 /* Responsive */
-/* =================== MEDIA QUERIES =================== */
-
 /* Tablet (768px - 1024px) */
 @media (max-width: 1024px) {
     .hero-content h1 {
@@ -332,9 +321,7 @@ img {
         padding: 10px 16px;
     }
 }
-
-/* Section Padding */
-/* LATEST SOUND EFFECTS - Light Theme */
+/* section */
 .section-header {
     width: 1320px;
     margin: auto;
@@ -359,7 +346,7 @@ img {
 
 .filter-buttons {
     display: flex;
-    gap: 12px; /* space between the two buttons */
+    gap: 12px; 
 }
 
 
@@ -369,7 +356,6 @@ img {
     margin: 0;
 }
 
-/* MAIN LIGHT TAB */
 .btn-filter {
     display: flex;
     align-items: center;
@@ -384,7 +370,6 @@ img {
     cursor: pointer;
 }
 
-/* ICON BOX LIKE THE IMAGE */
 .icon-box {
     width: 32px;
     height: 32px;
@@ -401,12 +386,10 @@ img {
     object-fit: contain;
 }
 
-/* ACTIVE TAB (gray) */
 .btn-filter.active {
     background: #EEF0F4;
 }
 
-/* DARK BUTTON LIKE IMAGE */
 .btn-all {
     background: #0D0D1A;
     color: white;
@@ -419,7 +402,6 @@ img {
 }
 
 
-/* SFX Grid */
 .sfx-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -441,7 +423,6 @@ img {
     transform: translateY(-2px);
 }
 
-/* Title Row */
 .title-row {
     display: flex;
     align-items: center;
@@ -473,7 +454,6 @@ img {
     flex: 1;
 }
 
-/* Player Row */
 .player-row {
     display: flex;
     align-items: center;
@@ -516,7 +496,6 @@ img {
    height: 20px; 
 
 }
-/* Action Row */
 .action-row {
     display: flex;
     justify-content: space-between;
@@ -665,14 +644,10 @@ img {
         margin-top: 30px;
     }
 }
-/* =========================================== */
-
-
 
 /* Popular Categories */
-
 .popular-sound-section {
-    width: 1320px;  /* exact container width */
+    width: 1320px;  
     margin: auto;
     padding: 80px 0px;
 }
@@ -707,14 +682,12 @@ img {
     font-size: 16px;
 }
 
-/* ROW layout */
 .sound-row {
     display: flex;
     gap: 24px;
     margin-top: 25px;
 }
 
-/* EXACT SIZES */
 .big-card {
     width: 648px;
     height: 260px;
@@ -725,21 +698,18 @@ img {
     height: 260px;
 }
 
-/* CARD BASE */
 .sound-card {
     position: relative;
     border-radius: 14px;
     overflow: hidden;
 }
 
-/* FULL IMAGE */
 .sound-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* OVERLAY TEXT */
 .overlay {
     position: absolute;
     bottom: 16px;
@@ -859,7 +829,6 @@ img {
 
 /* Popular Packs */
 
-/* Title */
 .packs-title {
     font-size: 40px;
     font-weight: 700;
@@ -867,7 +836,6 @@ img {
     text-align: center;
 }
 
-/* Subtitle */
 .packs-subtext {
     text-align: center;
     font-size: 16px;
@@ -1024,7 +992,6 @@ img {
     }
 }
 /* Advantages */
-/* ===== Section Base ===== */
 .advantages {
     padding: 80px 20px;
     background-color: #F8F2EA;
@@ -1087,7 +1054,7 @@ img {
     text-align: left;
     height: 230px;
 }
-/* Make middle card bigger */
+
 .adv-grid .adv-card:nth-child(2) {
     transform: scale(1.05);
     padding: 20px;
@@ -1111,7 +1078,6 @@ img {
 
 }
 
-/* Keep middle card bigger on hover */
 .adv-grid .adv-card:nth-child(2):hover {
     transform: scale(1.1) translateY(-5px);
 }
@@ -1249,15 +1215,13 @@ img {
 }
 
 /* Why Choose */
-
-/* GENERAL LAYOUT */
 .why-choose {
     max-width: 1320px;
     padding: 80px 0px;
     margin: auto;
 }
 
-/* HEADER */
+
 .why-header {
     display: flex;
     justify-content: space-between;
@@ -1278,7 +1242,7 @@ img {
     margin-top: 8px;
 }
 
-/* GRID */
+
 .why-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1292,7 +1256,6 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
 }
-/* CARDS BASE */
 .card {
     border-radius: 16px;
     background: #f7f9fc;
@@ -1312,7 +1275,6 @@ img {
     color: #777;
 }
 
-/* ICON BOX */
 .icon {
     width: 38px;
     height: 38px;
@@ -1325,23 +1287,19 @@ img {
     font-size: 16px;
 }
 
-/* BIG CARDS */
 .big {
     height: 180px;
     width: 648px;
 }
-/* SMALL CARDS */
 .small {
     height: 180px;
     width: 312px;
 }
 
-/* BEIGE CARD */
 .beige {
     background: #f7f1ea;
 }
 
-/* BLACK CARD */
 .dark {
     background: #000;
     color: #fff;
@@ -1529,50 +1487,47 @@ img {
     background-image: im;
 }
 .footer {
-    background-image: url('/assets/images/Frame\ 1597885071\ \(2\).png'); /* Replace with your image path */
-    /* Make the image cover the entire footer */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating */
-    color: #fff;                 /* Optional: make text readable on dark image */
-    padding: 60px 0;             /* Optional: add spacing */
+    background-image: url('/assets/images/Frame\ 1597885071\ \(2\).png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;                
+    padding: 60px 0;         
 }
 
-/* Optional: add a semi-transparent overlay for better text contrast */
 .footer::before {
-    /* content: ''; */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* adjust opacity */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 0;
 }
 
 .footer > .container,
 .footer-top,
 .footer-bottom-bar {
-    position: relative; /* Ensure content is above overlay */
+    position: relative;
     z-index: 1;
 }
 .footer .container {
-    max-width: 1320px; /* or whatever your design needs */
-    margin: 80px auto;     /* center content */
-    padding: 40px;    /* optional: small side padding */
+    max-width: 1320px;
+    margin: 80px auto;    
+    padding: 40px;    
     top: -40px;
     border-radius: 20px;
 }
 .footer .container::after {
     content: '';
     position: absolute;
-    top: 2px;     /* same as your original top */
+    top: 2px;   
     left: 0;
     width: 100%;
     height: 80px;
     background-color: #0F0F0F;
     background-size: cover;
-    border-radius: 20px 20px 0px 0px; /* same as container */
-    z-index: -1; /* Behind the content */
+    border-radius: 20px 20px 0px 0px; 
+    z-index: -1; 
 }
 .footer-top {
     display: grid;
@@ -1632,16 +1587,15 @@ img {
     font-size: 16px;
 }
 .footer-contact p a {
-    font-size: 40px;  /* Bigger font for the email link */
-    font-weight: bold; /* Optional: make it stand out */
-    color: #fff;       /* Change color if needed */
-    text-decoration: none; /* Optional: remove underline */
+    font-size: 40px; 
+    font-weight: bold; 
+    color: #fff;      
+    text-decoration: none; 
 }
 
-/* Optional: hover effect */
 .footer-contact p a:hover {
     text-decoration: underline;
-    color: #fca311; /* Example hover color */
+    color: #fca311; 
 }
 
 .footer-contact a {
@@ -1685,11 +1639,9 @@ img {
 
 .social-icons a {
     color: #aaa;
-    /* margin-left: 16px; */
-    /* font-size: 1.2rem; */
     transition: color 0.3s;
     gap: 5px;
-    /* justify-content: space-between; */
+
 }
 
 .social-icons a:hover {
